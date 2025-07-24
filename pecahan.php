@@ -102,26 +102,20 @@
 
   <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
 
-    <?php
-$folder = 'upload/pecahan/';
-$files = glob($folder . "*.pdf");
-
-foreach ($files as $file):
-  $filename = basename($file);
-?>
+    <!-- Card Dokumen -->
 <div class="bg-white shadow-md rounded-lg overflow-hidden">
-  <img src="assets/pdf/cover1.png" class="w-full h-48 object-cover" alt="PDF Cover" />
+  <img src="assets/pdf/cover1.png" alt="Cover PDF" class="w-full h-48 object-cover" />
   <div class="p-4">
-    <h2 class="font-semibold text-black text-lg mb-2"><?= htmlspecialchars($filename) ?></h2>
+    <h2 class="font-semibold text-black text-lg mb-2">LKPD</h2>
     <div class="flex justify-between items-center">
-      <a href="<?= $file ?>" target="_blank" class="text-blue-600 hover:underline">Lihat PDF</a>
-      <a href="<?= $file ?>" download class="text-gray-600 hover:text-black text-xl">
+      <a href="upload/pecahan/LKPD1.pdf" target="_blank" class="text-blue-600 hover:underline">Lihat PDF</a>
+      <a href="upload/pecahan/LKPD1.pdf" download class="text-gray-600 hover:text-black text-xl">
         <i class="fas fa-download"></i>
       </a>
     </div>
   </div>
 </div>
-<?php endforeach; ?>
+
 
 
     <!-- Tambahkan card lainnya sesuai kebutuhan -->
